@@ -10,6 +10,7 @@ public class SumofNumbers {
         }
         int res = findSum(arr, n);
         System.out.println(res);
+        sc.close();
     }
 
     static int findSum(int[] arr, int n) {
@@ -18,7 +19,6 @@ public class SumofNumbers {
         while (n > 0) {
             sum += arr[n-1];
             n--;
-            ;
         }
         return sum;
     }
