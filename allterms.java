@@ -16,6 +16,7 @@ public class allterms {
         System.out.println(sum / n);
         System.out.println(findMin(arr, n));
         System.out.println(findMax(arr, n));
+        sc.close();
     }
 
     static int findMin(int[] arr, int n) {

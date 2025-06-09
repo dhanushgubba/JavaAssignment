@@ -21,6 +21,6 @@ public class DiscountTickets {
             int finalamount = res - (res * others / 100);
             System.out.println(finalamount);
         }
-
+        sc.close();
     }    
 }
