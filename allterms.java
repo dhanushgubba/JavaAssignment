@@ -21,7 +21,7 @@ public class allterms {
 
     static int findMin(int[] arr, int n) {
         int min = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             min = arr[0];
             if (arr[i] < min) {
                 min = i;
@@ -31,11 +31,10 @@ public class allterms {
     }
 
     static int findMax(int[] arr, int n) {
-        int max = 0;
-        for(int i=0;i<n;i++) {
-            max = arr[0];
+        int max = arr[0];
+        for(int i=1;i< n;i++) {
             if(arr[i] > max) {
-                max = i;
+                max = i+1;
             } 
         }
         return max;
